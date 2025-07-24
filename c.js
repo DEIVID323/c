@@ -79,11 +79,37 @@ if (progressBar && audio) {
 
 // Palabras flotantes
 const romanticWords = [
-	'Amor', 'Corazón', 'Besos', 'Sueños', 'Eternidad', 'Pasión',
-	'Cariño', 'Ternura', 'Dulzura', 'Magia', 'Felicidad', 'Alma',
-	'Suspiros', 'Sonrisas', 'Abrazos', 'Miradas', 'Promesas', 'Deseo',
-	'Encanto', 'Destino', 'Romance', 'Ilusión', 'Caricia', 'Latidos',
-	'Esperanza', 'Nostalgia', 'Fantasía', 'Melodía', 'Poesía', 'Luz'
+	// Palabras naturales y tiernas
+	'Preciosa', 'Hermosa', 'Bonita', 'Linda', 'Guapa', 'Bella',
+	'Me encantas', 'Me gustas', 'Eres genial', 'Qué linda', 'Qué bonita',
+
+	// Cosas que quieres hacer
+	'Un besito', 'Abrazarte', 'Verte', 'Estar contigo', 'Mimitos',
+	'Caricias', 'Un abrazo', 'Acurrucarme', 'Besitos', 'Abrazos',
+
+	// Sentimientos reales
+	'Me haces sonreír', 'Me das paz', 'Me tranquilizas', 'Me alegras',
+	'Mariposas', 'Nervios', 'Emoción', 'Felicidad', 'Alegría',
+
+	// Cosas cotidianas
+	'Buenos días', 'Buenas noches', 'Te extraño', 'Pienso en ti',
+	'Dulces sueños', 'Cuídate', 'Que descanses', 'Te veo luego',
+
+	// Palabras cariñosas casuales
+	'Corazón', 'Amor', 'Cariño', 'Cielo', 'Vida', 'Bebé',
+	'Princesa', 'Reina', 'Tesoro', 'Muñeca', 'Chiquita',
+
+	// Cosas que sientes
+	'Química', 'Conexión', 'Vibra', 'Chispa', 'Feeling',
+	'Complicidad', 'Confianza', 'Tranquilidad', 'Bienestar',
+
+	// Momentos especiales
+	'Nuestros momentos', 'Recuerdos', 'Aventuras', 'Citas',
+	'Escapadas', 'Planes', 'Sorpresas', 'Travesuras',
+
+	// Expresiones naturales
+	'Eres increíble', 'Me fascinas', 'Me vuelves loco',
+	'No puedo evitarlo', 'Eres especial', 'Qué suerte tengo'
 ];
 
 function createFloatingWord() {
@@ -95,7 +121,7 @@ function createFloatingWord() {
 	word.style.animationDuration = (Math.random() * 4 + 6) + 's';
 	word.style.fontSize = (Math.random() * 0.8 + 1) + 'rem';
 
-	const hue = Math.random() * 60 + 300; // Tonos rosados/púrpuras
+	const hue = Math.random() * 150 + 400; // Tonos rosados/púrpuras
 	word.style.color = `hsla(${hue}, 70%, 50%, 0.7)`;
 
 	return word;
