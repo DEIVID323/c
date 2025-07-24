@@ -84,32 +84,25 @@ const romanticWords = [
 	'Me encantas', 'Me gustas', 'Eres genial', 'Qué linda', 'Qué bonita',
 
 	// Cosas que quieres hacer
-	'Un besito', 'Abrazarte', 'Verte', 'Estar contigo', 'Mimitos',
-	'Caricias', 'Un abrazo', 'Acurrucarme', 'Besitos', 'Abrazos',
+	'Quiero besito', 'Quiero abrazarte', 'Quiero verte', 'Quiero estar contigo', 'Quiero mimitos',
+	'Quiero caricias', 'Quiero un abrazo', 'Quiero acurrucarme', 'Quiero besitos', 'Quiero abrazos',
 
 	// Sentimientos reales
-	'Me haces sonreír', 'Me das paz', 'Me tranquilizas', 'Me alegras',
-	'Mariposas', 'Nervios', 'Emoción', 'Felicidad', 'Alegría',
+	'Me haces sonreír', 'Me das paz', 'Me tranquilizas', 'Me alegras', 'Me haces feliz',
+
 
 	// Cosas cotidianas
-	'Buenos días', 'Buenas noches', 'Te extraño', 'Pienso en ti',
-	'Dulces sueños', 'Cuídate', 'Que descanses', 'Te veo luego',
-
+	 'Te extraño', 'Pienso en ti', 'Te quiero', 'Te adoro', 'Te amo', 'Te deseo',
 	// Palabras cariñosas casuales
-	'Corazón', 'Amor', 'Cariño', 'Cielo', 'Vida', 'Bebé',
-	'Princesa', 'Reina', 'Tesoro', 'Muñeca', 'Chiquita',
-
-	// Cosas que sientes
-	'Química', 'Conexión', 'Vibra', 'Chispa', 'Feeling',
-	'Complicidad', 'Confianza', 'Tranquilidad', 'Bienestar',
+	 'Amor', 'Cariño', 'Cielo', 'Vida', 'Bebé',
+	'Princesa', 'Reina', 'linda',
 
 	// Momentos especiales
-	'Nuestros momentos', 'Recuerdos', 'Aventuras', 'Citas',
-	'Escapadas', 'Planes', 'Sorpresas', 'Travesuras',
+	 'Planes', 'Sorpresas', 
 
 	// Expresiones naturales
 	'Eres increíble', 'Me fascinas', 'Me vuelves loco',
-	'No puedo evitarlo', 'Eres especial', 'Qué suerte tengo'
+	'No puedo evitarlo pero me encantas', 'Eres especial',
 ];
 
 function createFloatingWord() {
