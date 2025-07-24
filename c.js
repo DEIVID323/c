@@ -94,15 +94,22 @@ const romanticWords = [
 	// Cosas cotidianas
 	 'Te extraño', 'Pienso en ti', 'Te quiero', 'Te adoro', 'Te amo', 'Te deseo',
 	// Palabras cariñosas casuales
-	 'Amor', 'Cariño', 'Cielo', 'Vida', 'Bebé',
-	'Princesa', 'Reina', 'linda',
-
-	// Momentos especiales
-	 'Planes', 'Sorpresas', 
+	 'Mi Amor', 'Mi Cariño', 'Mi Cielo', 'Mi Vida', 'Mi Bebé',
+	'Mi Princesa', 'Mi Reina', 'Mi Linda', 'Mi Corazón', 'Mi Tesoro',
+ 
 
 	// Expresiones naturales
 	'Eres increíble', 'Me fascinas', 'Me vuelves loco',
 	'No puedo evitarlo pero me encantas', 'Eres especial',
+	'Me encanta tu risa', 'Tu sonrisa ilumina mi día', 'Eres única', 'Eres perfecta para mí',
+	'Me encanta tu forma de ser', 'Eres todo lo que necesito',
+	// Expresiones de amor
+	'Te quiero mucho',  'Eres mi todo', 'Eres mi razón de ser',
+	'Te llevo en mi corazón', 'Eres mi sol', 'Eres mi luna	', 'Eres mi estrella', 'Eres mi universo',
+	'Te quiero más que a nada', 'Eres mi felicidad', 'Eres mi alegría', 'Eres mi inspiración',
+	
+	
+
 ];
 
 function createFloatingWord() {
@@ -110,8 +117,8 @@ function createFloatingWord() {
 	word.className = 'floating-word';
 	word.textContent = romanticWords[Math.floor(Math.random() * romanticWords.length)];
 	word.style.left = Math.random() * 100 + '%';
-	word.style.animationDelay = Math.random() * 2 + 's';
-	word.style.animationDuration = (Math.random() * 4 + 6) + 's';
+	word.style.animationDelay = Math.random() * 4 + 's';
+	word.style.animationDuration = (Math.random() * 6 + 9) + 's';
 	word.style.fontSize = (Math.random() * 0.8 + 1) + 'rem';
 
 	const hue = Math.random() * 150 + 700; // Tonos rosados/púrpuras
@@ -137,8 +144,8 @@ function startFloatingWords() {
 			if (container.contains(word)) {
 				container.removeChild(word);
 			}
-		}, 10000); // Aumenté el tiempo para evitar problemas
-	}, 800);
+		}, 20000); // Aumenté el tiempo para evitar problemas
+	}, 900);
 }
 
 // Esperar a que el DOM esté listo antes de iniciar
