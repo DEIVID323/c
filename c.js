@@ -145,7 +145,7 @@ function startFloatingWords() {
 				container.removeChild(word);
 			}
 		}, 10000); // Aumenté el tiempo para evitar problemas
-	}, 900);
+	}, 1000);
 }
 
 // Esperar a que el DOM esté listo antes de iniciar
