@@ -114,7 +114,7 @@ function createFloatingWord() {
 	word.style.animationDuration = (Math.random() * 4 + 6) + 's';
 	word.style.fontSize = (Math.random() * 0.8 + 1) + 'rem';
 
-	const hue = Math.random() * 150 + 400; // Tonos rosados/púrpuras
+	const hue = Math.random() * 150 + 700; // Tonos rosados/púrpuras
 	word.style.color = `hsla(${hue}, 70%, 50%, 0.7)`;
 
 	return word;
