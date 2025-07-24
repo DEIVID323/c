@@ -190,3 +190,94 @@ body {
 	top: 85%;
 	transform: translate(-50%, 0);
 }
+
+.audio-player {
+	background-color: #ffffff;
+	border-radius: 30px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	padding: 15px 20px;
+	width: 320px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.play-btn {
+	width: 40px;
+	height: 40px;
+	background-color: #333;
+	border: none;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.progress-container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.progress-bar {
+	width: 100%;
+	height: 6px;
+	background-color: #ddd;
+	border-radius: 5px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.progress {
+	height: 100%;
+	width: 0%;
+	background-color: #7e57c2;
+}
+
+.time {
+	font-size: 12px;
+	display: flex;
+	justify-content: space-between;
+	color: #555;
+}
+
+.floating-words {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 0;
+}
+
+.floating-word {
+	position: absolute;
+	font-family: "Dancing Script", cursive;
+	font-size: 1.2rem;
+	color: rgba(255, 0, 100, 0.6);
+	animation: float 8s linear infinite;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(100vh) rotate(0deg);
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 1;
+	}
+
+	90% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(-100px) rotate(360deg);
+		opacity: 0;
+	}
+}
