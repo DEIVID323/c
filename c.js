@@ -122,7 +122,7 @@ function createFloatingWord() {
 	word.style.fontSize = (Math.random() * 0.8 + 1) + 'rem';
 
 	const hue = Math.random() * 150 + 700; // Tonos rosados/púrpuras
-	word.style.color = `hsla(${hue}, 70%, 50%, 0.5)`;
+	word.style.color = `hsla(${hue}, 70%, 50%, 0.9)`;
 
 	return word;
 }
