@@ -108,6 +108,9 @@ body {
 .message .sincere p {
 	margin: 0;
 }
+.message p {
+	font-weight: 600;
+}
 
 @keyframes beat {
 	0% {
