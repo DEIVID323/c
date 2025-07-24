@@ -76,9 +76,10 @@ body {
 	background-color: #eee;
 	font-family: "Quicksand", serif;
 	font-optical-sizing: auto;
-	font-size: clamp(16px, 10vw, 17px);
+	font-size: clamp(16px, 4vw, 18px);
+	letter-spacing: -1px;
 	text-align: justify;
-	line-height: 1.5em;
+	line-height: 1.2em;
 	width: 80%;
 	max-width: 550px;
 	height: 78%;
