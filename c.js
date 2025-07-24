@@ -122,7 +122,7 @@ function createFloatingWord() {
 	word.style.fontSize = (Math.random() * 0.8 + 1) + 'rem';
 
 	const hue = Math.random() * 150 + 700; // Tonos rosados/púrpuras
-	word.style.color = `hsla(${hue}, 70%, 50%, 0.7)`;
+	word.style.color = `hsla(${hue}, 70%, 50%, 0.5)`;
 
 	return word;
 }
@@ -144,7 +144,7 @@ function startFloatingWords() {
 			if (container.contains(word)) {
 				container.removeChild(word);
 			}
-		}, 20000); // Aumenté el tiempo para evitar problemas
+		}, 10000); // Aumenté el tiempo para evitar problemas
 	}, 900);
 }
 
