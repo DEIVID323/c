@@ -1,93 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <title>C</title>
-    </head>
-    <body>
-        <p class="instruction">Haz clic en el corazón si me quieres!</p>
-        
-        <div class="container">
-            <label>
-            <div class="heart">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg"></img>
-            </div>
-            <input id="messageState" type="checkbox" style="display:none"/>
-            </label>
-            <div class="message">
-                <h1 style="font-family: Cinzel, serif; font-size: 40px; letter-spacing: 1px;">Esto es para ti, sí… tú, la que me gustas</h1>
-                <p>
-                    <span>
-                        &emsp;Para empezar, si me quieres, porqué le diste clic al corazón Jeje 😘<br><br>
-                
-                        &emsp;Cielo, espero que estés bien. Segundo, no sé cómo empezar esto, jeje, pero ¿sabes algo? Me gustas bastante
-                        y quiero decirte que gracias por los momentos que hemos compartido. Recuerdo el día que me hablaste para hacer
-                        un trabajo en pareja; no pensé que pasaríamos de hacer un trabajo en pareja a ser pareja, jaja, no mentiras.
-                        Pero sí recuerdo que ese día me preguntaste si ya tenía con quién hacer el trabajo, y pues te dije que no, y
-                        desde ese día empezamos a hablar.
-                
-                        <br><br>&emsp;Hubo un tiempo que nos dejamos de hablar, pero el punto es que desde el primer día fuiste súper
-                        amable conmigo y me caíste súper bien. Gracias por ser tan amable conmigo desde el principio, por estar ahí
-                        cuando necesitaba algo. Te ganaste mi confianza hasta el punto de que podía abrirme contigo.
-                
-                        <br><br>&emsp;Y no sé exactamente en qué momento pasó, pero entre cada conversación, cada gesto bonito que
-                        hacías conmigo, cada vez que me escuchabas o simplemente me apoyabas, ahí fue donde empezaste a gustarme. Aquel
-                        día me preguntaste que por qué me gustabas y por qué no otra persona, y la respuesta es que me gusta tu forma de
-                        ser, me gusta que seas tú, como eres conmigo, cómo me tratas. Me haces sentir cómodo, tranquilo, y eso lo valoro
-                        mucho. Me gusta que eres sencilla, auténtica.
-                
-                        <br><br>&emsp;También me gusta mucho cómo te esfuerzas por salir adelante, admiro eso. Cómo le metes ganas a lo
-                        que estamos estudiando, aunque estés cansada, con sueño —que eso es normal en ti, jeje— igual sigues ahí sin
-                        rendirte, y eso para mí vale un montón. Y no sé, eso me gusta mucho de ti, me parece muy bonito, hasta me
-                        motiva.
-                
-                        <br><br>&emsp;Y en lo físico, me encanta tu carita, me gusta cuando me quedas mirando y te digo que por qué me
-                        miras así, jeje. También me gusta mucho tu cabello, me parece muy lindo. Sabes, me gusta cuando me das muchos
-                        besitos o cuando me hueles como perrito, jeje, aunque es raro, pero me gusta.
-                
-                        <br><br>&emsp;Quiero que sepas que eres muy especial para mí. Espero que te haya gustado o al menos te haya
-                        hecho reír con mis pendejadas, jeje. No sabía cómo hacer esto. Pensé hacerlo físico, pero mi letra es horrible.
-                        También pensé en hacerlo en video, pero elegí esta forma. Espero te guste, es con mucho cariño, y también espero
-                        te guste la canción.
-                    </span>
-                </p>
-                
-                <br>
-                
-                <div class="sincere">
-                    <p style="font-weight: bold;">❤️Te quiero mucho❤️</p>
-                    <p>El amor de tu vida jeje</p>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                <br>
-                <br>
-                <br>
-                <div class="audio-player">
-                    <button class="play-btn" id="playPauseBtn">▶</button>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="progressBar">
-                            <div class="progress" id="progress"></div>
-                        </div>
-                        <div class="time">
-                            <span id="currentTime">0:00</span>
-                            <span id="duration">0:00</span>
-                        </div>
-                    </div>
-                    <audio id="audio" src="C.m4a"></audio>
-                </div>
-            </div>
-            <div class="floating-words" id="floatingWords"></div>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>C</title>
+</head>
+<body>
+
+<p class="instruction">Haz clic en el corazón</p>
+
+<div class="container">
+    <label>
+        <div class="heart">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg" alt="corazón">
         </div>
-        
-        <script src="jquery.js"></script>
-        <script src="jquery2.1.js"></script>
-        <script defer src="c.js"></script>
-        
-    </body>
-</html>
+        <input id="messageState" type="checkbox" style="display:none"/>
+    </label>
 
+    <!-- MENSAJE -->
+    <div class="message">
+        <h1 style="font-family: Cinzel, serif; font-size: 36px; letter-spacing: 1px;">
+            Para ti
+        </h1>
+
+        <p>
+            <span>
+                &emsp;No soy muy bueno escribiendo estas cosas, pero igual quería decirte algo.<br><br>
+
+                &emsp;Me gusta pasar tiempo contigo. Me gusta hablar contigo, compartir cualquier cosa,
+                incluso cuando no estamos haciendo nada especial. Desde hace rato no conocía a alguien
+                con quien todo se sintiera tan normal y tranquilo al mismo tiempo.<br><br>
+
+                &emsp;Me gusta cómo eres conmigo, tu forma de ser, cómo ves las cosas y cómo haces que
+                todo se sienta más ligero. Compartir contigo se volvió algo que valoro, y eso no pasa
+                con cualquiera.<br><br>
+
+                &emsp;No escribo esto para presionarte ni para esperar algo. Solo quería que supieras que
+                me gustas y que me gusta tenerte cerca. Eso es todo.
+            </span>
+        </p>
+
+        <br>
+
+        <div class="sincere">
+            <p style="font-weight: bold;">❤️ Gracias por ser tú ❤️</p>
+            <p>De alguien que disfruta compartir contigo</p>
+        </div>
+
+        <br><br><br>
+
+        <!-- AUDIO -->
+        <div class="audio-player">
+            <button class="play-btn" id="playPauseBtn">▶</button>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <div class="time">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+            <audio id="audio" src="C.m4a"></audio>
+        </div>
+    </div>
+
+    <div class="floating-words" id="floatingWords"></div>
+</div>
+
+<!-- Scripts -->
+<script src="jquery.js"></script>
+<script src="jquery2.1.js"></script>
+<script defer src="c.js"></script>
+
+</body>
+</html>
